@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EC4D11;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none; 
+}
+
+a h1{
+  transition: transform .3s; 
+}
+
+a h1:hover {
+  transform: scale(1.1);
+}
+
+/*header*/
+header {
+  margin: auto;
+  width: 940px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#cabecalho h1, h3{
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+/*main*/
+main {
+  padding-top: 25px;
+  margin: auto;
+  width: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 80px 80px;
+}
+
+main h3 {
+  font-size: 20px;
+  color: #EC4D11;
+  font-weight: bold;
+}
+
+#titulo {
+  width: 350px;
+  background-color: #EC4D11;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: 85px;
+}
+
+#titulo h1 {
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 30px;
+}
+
+section{
+  padding-top: 25px;
+  margin: auto 25px;
+}
+
+#ingredientes ul{
+  margin-left: 35px;
+}
+
+#preparo em {
+  color: #EC4D11;
+}
+
+#frase {
+  text-align: center;
+  color: #EC4D11;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 25px;
+  transition: transform .3s;
+}
+
+#frase:hover {
+  transform: scale(1.1);
+}
+
+/*footer*/
+footer {
+  margin-top: 25px;
+  color: #EC4D11;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+footer div {
+  margin: auto;
+  background-color: white;
+  width: 25px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+footer p{
+  font-size: 15px;
+}
+
+/*animation*/
+
+header {
+  animation: fromTop 1s .5s backwards;
+}
+
+#titulo{
+  animation: fromLeft 1.5s .5s backwards;
+}
+
+main{
+  animation: fade 1s 1s backwards;
+}
+
+footer {
+  animation: fade 1s 1s backwards;
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(-60px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade  {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translateX(-800px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

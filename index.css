@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assets/bg-index.png);
+    background-position: top center;
+    background-size: 100% auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*header*/
+
+header {
+    margin: 25px;
+    background-color: #fff;
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+#titulo {
+    margin-left: 25px;
+}
+
+#questao {
+    font-size: 10px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a h2{
+    transition: transform .3s;
+}
+
+a h2:hover {
+    transform: scale(1.1);
+}
+
+/*main*/
+
+main {
+    display: flex;
+    justify-content:center;
+    margin: auto 50px;
+    gap: 25px;
+}
+
+main section {
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.descricao{
+    margin: auto 15px;
+    padding-bottom: 25px;
+}
+
+main section ul {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+
+#felicidade a p{
+    color: #EC4D11;
+    transition: transform .3s;
+}
+
+#felicidade a p:hover {
+    transform: scale(1.1);
+}
+
+/*footer*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer div{
+    margin: auto;
+    margin-bottom: 15px;
+    width: 15%;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 1s all;
+}
+
+footer div h1 {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+footer div a {
+    text-decoration: none;
+    transition: 1s color;
+}
+
+footer div:hover{
+    transform: scale(1.1);
+}
+
+footer div a:hover {
+    color: orange;
+}
+
+/*animation*/
+
+header {
+    animation: fromTop 2s .5s backwards;
+}
+
+main {
+    animation: opacity 1.5s 1s backwards;
+}
+
+footer {
+    animation: opacity .5s 2s backwards;
+}
+
+@keyframes fromTop {
+    from {
+        transform: translateY(-100px)
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
