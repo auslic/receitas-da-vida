@@ -97,7 +97,8 @@ footer {
 footer div{
     margin: auto;
     margin-bottom: 15px;
-    width: 15%;
+    width:fit-content;
+    padding: 0 15px;
     background-color: #fff;
     border-radius: 25px;
     transition: 1s all;
@@ -155,3 +156,14 @@ footer {
     }
 }
 
+/*media query*/
+
+@media screen and (max-width: 480px){
+    header #titulo {
+        font-size: 12px;
+    }
+
+    header #questao {
+        font-size: 8px;
+    }
+}
